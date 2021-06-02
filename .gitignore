@@ -1,3 +1,7 @@
 populate/env
 populate/venv
 *.bak
+
+.terraform
+.terraform.lock.hcl
+terraform.tfstate

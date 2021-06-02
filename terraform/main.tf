@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    key            = "infrastructure"
+    dynamodb_table = "dynamodb-pitr-terraform-state-lock"
+  }
+}
+
+
 resource "aws_dynamodb_table" "pitr-table" {
     name = "testing-pitr"
     hash_key = "pitr-key"

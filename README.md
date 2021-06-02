@@ -26,6 +26,9 @@ cd ..
 
 ## Populate table (optional)
 
+This will populate the table with 50,000 randomly generated records. If the table name is not the default 'testing-pitr' the code will need editing.
+
+
 ```sh
 cd populate
 python3 -m venv env

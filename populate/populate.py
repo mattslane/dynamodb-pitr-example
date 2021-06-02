@@ -47,7 +47,9 @@ def main():
     for x in range(2000):
         items = [ generate_data() for y in range(25)]
         write_to_dynamo(items)
-        print(x)
+
+        if((x + 1) % 10 == 0):
+            print(f"{(x+1) * 25} records added")
 
 if __name__ == "__main__":
     main()

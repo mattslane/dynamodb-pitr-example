@@ -5,7 +5,7 @@ provider "aws" {
 data "aws_iam_account_alias" "current" {}
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "dynamodb-pitr-terraform-state-${var.env}"
+  bucket = "dynamodb-pitr-terraform-state"
   acl    = "private"
 
   versioning {
